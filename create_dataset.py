@@ -4,7 +4,7 @@ import os
 import gzip
 import random
 
-lines = gzip.open('lyrics.txt.gz', 'rt', encoding='utf-8').readlines()
+lines = open('data_combined.txt', 'rt', encoding='utf-8').readlines()
 lines = [line.rstrip('\n') for line in lines]
 random.seed(1234)
 random.shuffle(lines)
